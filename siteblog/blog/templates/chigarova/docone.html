@@ -1,0 +1,21 @@
+{% extends 'main_page.html' %}
+{% load static %}
+{% block title %}
+{{ title}}
+{% endblock %}
+{% block menu_header %}
+
+{% endblock %}
+{% block content %}{% endblock %}
+
+{% block link %}
+<hr>
+<div class="jumbotron">
+    <h1 class="display-4" >{{doc.title|lower|capfirst}}</h1>
+    <hr class="my-4">
+    <h2 class="display-5" >Необходимые документы:</h2>
+    <p class="lead">{{doc.content|linebreaks}}</p>
+    <hr class="my-4">
+    <a class="btn btn-primary btn-lg" href="../" role="button">Вернуться назад</a>
+</div>
+{% endblock %}

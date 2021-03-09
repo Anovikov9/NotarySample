@@ -1,0 +1,87 @@
+
+.bottom {
+    margin: auto;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-family: Georgia, serif;
+    vertical-align: baseline;
+    background: #e1e1e5;
+    line-height: 15px;
+}
+
+.bottom .i {
+    float: left;
+    margin-top: 4px;
+}
+.width {
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.four, .four .col {
+    width: 25%;
+}
+.four .cols-inn {
+    width: 400%;
+
+}
+strong {
+
+}
+.col {
+    float: right;
+    margin-right: 80px;
+}
+
+.okno {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ffffff;
+    color: rgb(55, 41, 6);
+
+
+}
+.mainwindow {
+    background-color: #fafafa;
+}
+table td {
+    text-align: center;
+}
+table td {
+    text-align: center;
+}
+.menu {
+    left: 50%;
+    position: relative;
+
+}
+.menu ul li{
+    right: 50%;
+    position: relative;
+    display: inline-block;
+}
+.menu ul li a {
+    position: relative;
+    color: rgb(55, 41, 6);
+    font-family: Georgia, serif;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 70px;
+    padding: 20px 20px 20px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+figcaption {
+    text-align: center;
+   }
+
+   .left {
+    float: left; /* Выравнивание по левому краю */
+    margin: 0 1em -1em 0em; /* Отступ справа и снизу */
+   }
+
+p.top-text {
+    padding-top: 3em ;
+}

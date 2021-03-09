@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<title>{% block title %}{% endblock %}</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Front page</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="stylesheet" href="{% static 'responsive.css' %}">
+    <link rel="stylesheet" href="{% static 'menu.css' %}">
+    <link rel="stylesheet" href="{% static 'button.css' %}">
+    <!-- Bookform widget --><script>(function (w,d,s,o,f,js,fjs){w['BookformObject']=o;w[o]=w[o]||function(){(w[o].q=w[o].q||[]).push(arguments)};js=d.createElement(s),fjs=d.getElementsByTagName(s)[0];js.id=o;js.src=f;js.async=1;fjs.parentNode.insertBefore(js,fjs);}(window,document,'script','Bookform','https://widget.bookform.ru/38307/js'));</script><!-- End Bookform widget -->
+</head>
+<body>
+
+<div class="nav__bar">
+    <a href="#" class="nav__trigger">
+        <div class="bars"></div>
+    </a>
+</div>
+
+<main class="main">
+<div class="mainwindow">
+    <div class="okno">
+          <figure class="left"><img  src="{% static '/img/logo_main.png' %}"  alt="logo" id="logo"></figure>
+        <p  class="top-text" id="logo2";><h3>Нотариус Фамилия Имя Отчество</h3>
+        <h5>нотариальный округ "Город Астрахань"</h5></p>
+
+
+        {% block menu_header %}{% endblock %}
+        {% block content %}{% endblock %}
+        {% block tarif %}{% endblock %}
+        {% block link %}{% endblock %}
+        <hr>
+
+        <div class="bottom " >
+            <div class="width">
+                <div class="four cols">
+                    <div class="cols-inn">
+                        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Addd0452cfe9a162dd762294eb204c15e2931d661850220ffbcc0e4dc6311162b&amp;source=constructor" width="50%" height="250" frameborder="0"></iframe>
+                        <div class="col">
+                            <div class="col-inn">
+                                <h4>Контакты</h4>
+                                <div >Телефон:</div>
+                                <p class="i-indent"> +7 (8512) <strong>44-44-59</strong><br>
+                                <div>Email:</div>
+                                <p class="i-indent"><a href="mailto:chigarova@inbox.ru" processed="processed">ваша почта@inbox.ru</a>
+                                <h4>Адрес</h4>
+                                <p class="i-indent">г. Астрахань,&nbsp;ул. Ваша улица, д. 1</p>
+                                <li><em>Вход с (ваше описание)</em></li>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</main>
+<nav class="nav">
+    <ul class="nav__list" id="nav-list">
+        <li class="nav__item"><a href="{% url 'home' %}">Нотариус</a></li>
+        <li class="nav__item"><a href="{% url 'category' %}">Нотариальные <br id="mobile1">  действия</a></li>
+        <li class="nav__item"><a href="{% url 'tarifs' %}">Тарифы</a></li>
+        <li class="nav__item"><a href="{% url 'link' %}">Полезные <br id="mobile2"> ресурсы</a></li>
+        <li class="nav__item"><a href="{% url 'contacts' %}">Контакты</a></li>
+        <li class="nav__item"><a href="{% url 'feedback' %}">Спроси  <br id="mobile3">нотариуса</a></li>
+        <li class="nav__item"><a href="{% url 'yandex' %}">Запись  <br id="mobile4">на прием</a></li>
+    </ul>
+</nav>
+<script src="{% static 'js/menu.js' %}"></script>
+<script src="{% static 'js/bootstrap.js' %}"></script>
+<script src="{% static 'js/button.js' %}"></script>
+
+</body>
+
+</html>
